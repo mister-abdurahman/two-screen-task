@@ -1,4 +1,3 @@
-import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { PiTooth } from "react-icons/pi";
 import { motion } from "framer-motion";

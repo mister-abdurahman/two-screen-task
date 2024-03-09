@@ -1,4 +1,3 @@
-import React from "react";
 import { GrMultimedia } from "react-icons/gr";
 import { MdOndemandVideo, MdOutlineCastConnected } from "react-icons/md";
 import { motion } from "framer-motion";

@@ -3,10 +3,6 @@ import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { FaNodeJs } from "react-icons/fa";
-
-import tyepscriptImage from "../assets/typescript1.png";
-import nodeImage from "../assets/node1.png";
-import tailwindImage from "../assets/tailwind2.png";
 import { GoArrowDown } from "react-icons/go";
 import { Link } from "react-scroll";
 
