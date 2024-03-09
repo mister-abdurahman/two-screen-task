@@ -13,7 +13,7 @@ export const ScreenThree = () => {
         smooth={true}
         offset={50}
         duration={500}
-        className="absolute flex justify-center top-12"
+        className="absolute flex justify-center top-14"
       >
         <FaArrowCircleUp className="w-10 h-10" />
       </Link>

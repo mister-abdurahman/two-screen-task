@@ -14,14 +14,17 @@ import { Card } from "../components/Card";
 
 export const ScreenTwo = () => {
   return (
-    <div id="screenTwo" className="h-screen flex flex-col justify-between">
+    <div
+      id="screenTwo"
+      className="h-screen text-center flex flex-col justify-between"
+    >
       <Link
         to="screenOne"
         spy={true}
         smooth={true}
         offset={50}
         duration={500}
-        className="flex justify-center mt-12"
+        className="flex justify-center mt-14"
       >
         <FaArrowCircleUp className="w-10 h-10" />
       </Link>
@@ -78,7 +81,7 @@ export const ScreenTwo = () => {
         smooth={true}
         offset={50}
         duration={500}
-        className="flex justify-center mb-12"
+        className="flex justify-center mb-14"
       >
         <FaArrowCircleDown className="w-10 h-10" />
       </Link>

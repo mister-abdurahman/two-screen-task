@@ -15,7 +15,7 @@ export const ScreenOne = () => {
         smooth={true}
         offset={50}
         duration={500}
-        className="absolute flex justify-center bottom-12"
+        className="absolute flex justify-center bottom-14"
       >
         <FaArrowCircleDown className="w-10 h-10" />
       </Link>
