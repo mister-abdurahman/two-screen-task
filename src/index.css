@@ -16,3 +16,27 @@
 .disappearing-card {
   animation: disappear 1s ease-in-out forwards;
 }
+
+@keyframes rightArrow {
+  /* move right, down, right */
+  0% {
+    opacity: 1;
+    top: 40%;
+    left: 25%;
+  }
+  20% {
+    left: 45%;
+    /* transform: translateX(1.5rem); */
+  }
+  40% {
+    top: 65%;
+    /* transform: translateY(1rem); */
+  }
+  100% {
+    opacity: 0;
+    /* transform: translateX(1rem); */
+  }
+}
+.arrow {
+  animation: rightArrow 3s ease-in-out;
+}
