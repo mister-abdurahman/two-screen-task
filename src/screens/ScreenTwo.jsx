@@ -14,7 +14,7 @@ import { Card } from "../components/Card";
 
 export const ScreenTwo = () => {
   return (
-    <div className="h-screen flex flex-col justify-between">
+    <div id="screenTwo" className="h-screen flex flex-col justify-between">
       <Link
         to="screenOne"
         spy={true}
