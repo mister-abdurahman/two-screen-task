@@ -28,7 +28,7 @@ export const ScreenTwo = () => {
       <div className="relative flex items-center justify-center">
         <p className="text-6xl">A large font of text</p>
 
-        <Card>
+        <Card rotate={"-rotate-12"}>
           <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
             Typescript <TbBrandTypescript />
           </span>
@@ -39,7 +39,7 @@ export const ScreenTwo = () => {
           />
         </Card>
 
-        <Card>
+        <Card rotate={"-rotate-6"}>
           <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
             Tailwind <TbBrandTailwind />
           </span>
@@ -49,7 +49,7 @@ export const ScreenTwo = () => {
             className="w-full h-full object-cover rounded-sm"
           />
         </Card>
-        <Card>
+        <Card rotate={"-rotate-3"}>
           <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
             NodeJs <FaNodeJs />
           </span>
@@ -60,7 +60,7 @@ export const ScreenTwo = () => {
           />
         </Card>
 
-        <Card>
+        <Card rotate={"-rotate-1"}>
           <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
             React <FaReact />
           </span>

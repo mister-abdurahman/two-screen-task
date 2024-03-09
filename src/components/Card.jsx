@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Card = ({ children }) => {
+export const Card = ({ children, rotate }) => {
   const [addClass, setAddClass] = useState(false);
 
   function handleAnimation() {
@@ -11,7 +11,7 @@ export const Card = ({ children }) => {
       onClick={handleAnimation}
       className={`${
         addClass ? "disappearing-card" : ""
-      } h-56 w-56 -rotate-12 absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm`}
+      } h-56 w-56 absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-sm ${rotate}`}
     >
       {children}
     </div>
