@@ -40,3 +40,12 @@
 .arrow {
   animation: rightArrow 3s ease-in-out;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 10px;
+}

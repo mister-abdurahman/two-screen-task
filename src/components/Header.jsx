@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const Header = () => {
   const scaleVariants = {
     header: {
-      scale: [0, 1],
+      scale: [1],
       opacity: [0, 1],
       y: [100, 0],
       transition: {

@@ -1,31 +1,21 @@
 import { Card } from "../components/Card";
 import { TbBrandTailwind, TbBrandTypescript } from "react-icons/tb";
-import { GrMultimedia } from "react-icons/gr";
-import { MdOndemandVideo, MdOutlineCastConnected } from "react-icons/md";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { motion } from "framer-motion";
 import { FaNodeJs } from "react-icons/fa";
 
 import tyepscriptImage from "../assets/typescript1.png";
-import reactImage from "../assets/react11.png";
 import nodeImage from "../assets/node1.png";
 import tailwindImage from "../assets/tailwind2.png";
 import { GoArrowDown } from "react-icons/go";
 import { Link } from "react-scroll";
 
+import image1 from "../assets/man2.jpg";
+import image2 from "../assets/man3.jpg";
+import image3 from "../assets/man4.jpg";
+import image4 from "../assets/man5.jpg";
+
 export const SecondScreen = () => {
-  const scaleVariants = {
-    card: {
-      scale: [0, 1],
-      opacity: [1, 0],
-      y: [-100, 0],
-      transition: {
-        duration: 1,
-        ease: "easeInOut",
-      },
-    },
-  };
   return (
     <div id="secondScreen" className="h-screen relative">
       <Header />
@@ -33,34 +23,44 @@ export const SecondScreen = () => {
         <p className="tracking-widest">Our Advantages</p>
       </div>
       <Card rotate={"-rotate-12"}>
-        <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
-          Typescript <TbBrandTypescript />
+        <span className="bg-white bottom-3 rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
+          Original <TbBrandTypescript />
         </span>
         <img
-          src={tyepscriptImage}
+          src={image1}
           alt="typescript image"
-          className="w-full h-full object-cover rounded-sm"
+          className="w-full h-full object-cover rounded-2xl"
         />
       </Card>
 
       <Card rotate={"-rotate-6"}>
-        <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
-          Tailwind <TbBrandTailwind />
+        <span className="bg-white bottom-3 rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
+          Smile More <TbBrandTailwind />
         </span>
         <img
-          src={tailwindImage}
+          src={image2}
           alt="tailwind image"
-          className="w-full h-full object-cover rounded-sm"
+          className="w-full h-full object-cover rounded-2xl"
         />
       </Card>
       <Card rotate={"-rotate-3"}>
-        <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
-          NodeJs <FaNodeJs />
+        <span className="bg-white bottom-3 rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
+          Happy <FaNodeJs />
         </span>
         <img
-          src={nodeImage}
+          src={image3}
           alt="node image"
-          className="w-full h-full object-cover rounded-sm"
+          className="w-full h-full object-cover rounded-2xl"
+        />
+      </Card>
+      <Card rotate={"-rotate-1"}>
+        <span className="bg-white rounded-lg bottom-3 absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
+          Confidence <FaNodeJs />
+        </span>
+        <img
+          src={image4}
+          alt="node image"
+          className="w-full h-full object-cover rounded-2xl"
         />
       </Card>
       <Footer />

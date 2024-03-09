@@ -40,7 +40,7 @@ export const FourthScreen = () => {
     },
     cardSlide1: {
       scale: [1],
-      y: [-120, 90, 80, 0],
+      y: [-120, 90, 80, -200, 0],
       opacity: [0, 1],
       transition: {
         duration: 2,
@@ -49,7 +49,7 @@ export const FourthScreen = () => {
     },
     cardSlide2: {
       scale: [1],
-      y: [90, 80, 120, 0],
+      y: [90, 80, 120, 150, 0],
       opacity: [0, 1],
       transition: {
         duration: 2,
@@ -100,11 +100,11 @@ export const FourthScreen = () => {
           </div>
           <Footer />
         </div>
-        <div className="basis-2/5 relative flex gap-3 justify-end">
+        <div className="basis-2/5 relative flex gap-3 justify-end overflow-scroll">
           <motion.div
             variants={scaleVariants}
             whileInView={scaleVariants.cardSlide1}
-            className="flex flex-col gap-4 absolute left-44 -top-14"
+            className="flex flex-col gap-4 absolute left-40 -top-14"
           >
             <figure className="w-44 h-56 rounded-xl">
               <img
@@ -127,11 +127,18 @@ export const FourthScreen = () => {
                 className="rounded-xl w-full h-full object-cover"
               />
             </figure>
+            <figure className="w-44 h-56 rounded-xl">
+              <img
+                src={image2}
+                alt=""
+                className="rounded-xl w-full h-full object-cover"
+              />
+            </figure>
           </motion.div>
           <motion.div
             variants={scaleVariants}
             whileInView={scaleVariants.cardSlide2}
-            className="flex flex-col gap-4 absolute"
+            className="flex flex-col gap-4 absolute top-2"
           >
             <figure className="w-44 h-56 rounded-xl">
               <img
