@@ -13,22 +13,6 @@ import { TbBrandTypescript, TbBrandTailwind } from "react-icons/tb";
 import { Card } from "../components/Card";
 
 export const ScreenTwo = () => {
-  //   useEffect(function () {
-  //     const card = document.getElementById("myCard");
-  //     const callBackFn = () => {
-  //       card.classList.add("hide");
-  //     };
-  //     card.addEventListener("click", callBackFn);
-
-  //     return card.removeEventListener("click", callBackFn);
-  //   }, []);
-
-  //   const [addClass, setAddClass] = useState(false);
-
-  //   function handleAnimation() {
-  //     setAddClass(true);
-  //   }
-
   return (
     <div className="h-screen flex flex-col justify-between">
       <Link
@@ -43,13 +27,25 @@ export const ScreenTwo = () => {
       </Link>
       <div className="relative flex items-center justify-center">
         <p className="text-6xl">A large font of text</p>
+
         <Card>
           <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
-            React <FaReact />
+            Typescript <TbBrandTypescript />
           </span>
           <img
-            src={reactImage}
-            alt="react image"
+            src={tyepscriptImage}
+            alt="typescript image"
+            className="w-full h-full object-cover rounded-sm"
+          />
+        </Card>
+
+        <Card>
+          <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
+            Tailwind <TbBrandTailwind />
+          </span>
+          <img
+            src={tailwindImage}
+            alt="tailwind image"
             className="w-full h-full object-cover rounded-sm"
           />
         </Card>
@@ -63,24 +59,14 @@ export const ScreenTwo = () => {
             className="w-full h-full object-cover rounded-sm"
           />
         </Card>
-        <Card>
-          <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
-            Tailwind <TbBrandTailwind />
-          </span>
-          <img
-            src={tailwindImage}
-            alt="tailwind image"
-            className="w-full h-full object-cover rounded-sm"
-          />
-        </Card>
 
         <Card>
           <span className="bg-white rounded-lg absolute left-1/2 -translate-x-1/2 mt-2 px-3 flex items-center gap-2">
-            Typescript <TbBrandTypescript />
+            React <FaReact />
           </span>
           <img
-            src={tyepscriptImage}
-            alt="typescript image"
+            src={reactImage}
+            alt="react image"
             className="w-full h-full object-cover rounded-sm"
           />
         </Card>
